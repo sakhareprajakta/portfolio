@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: white;
+}
+#header {
+    width:100%;
+    height:100vh;
+    background-image: url(img/flower3.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#p{
+    width: 100%;
+    height: 80px;
+    
+
+}
+.container {
+    padding: 15px 3%;
+   
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color:rgb(206, 33, 206);
+    font-size: 30px;
+    margin-top:20px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+
+nav ul li a {
+    color: green;
+    text-decoration: none;
+    font-size: 25px;
+    position:relative;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width:100%;
+}
+
+.header-text {
+    margin-top: 15%;
+    margin-left: 12%;
+    font-size: 35px;
+    color: #080808;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.header-text h1 span {
+    color: green;
+    font-size: 60px;
+}
+
+.pp {
+    font-size: 30px;
+}
+
+/*.........about.......*/
+
+#about {
+    padding: 50px 0;
+    color: #ababab;
+}
+
+h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: green;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: ghostwhite;
+    color: green;
+}
+
+.c {
+    color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 90%;
+    margin-left: 8%;
+}
+
+.about-col-2 {
+    flex-basis: 50%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+
+    width: 50px;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    color: #b547b5;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*------services------*/
+
+#Services {
+    padding: 30px;
+    margin-top: 3px;
+
+}
+h2 {
+    color: #4CAF50;
+}
+
+.services-list {
+    display: grid;
+    text-align: center;
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+
+.serv {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-top: 3px;
+
+}
+
+#pp {
+    text-align: center;
+}
+
+
+
+/*--------Skill-------*/
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    
+    
+  
+}
+.logos img{
+    padding: 5px;
+    margin: 6px;
+}
+
+.ff{
+  margin-top: 60px;
+ display:flex;
+}
+.max-width {
+    margin-top: 50px;
+    text-align: center;
+   width:100%;
+}
+
+.text{
+    margin-top: 30px;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+
+.contain {
+     text-align: center;
+    background-color: #ddd;
+    margin-left: 30%;
+
+}
+.column-left{
+    flex-basis: 35%;
+    margin-left: 100px;
+    
+}
+.column-right{
+    flex-basis: 50%;
+    margin-right: 210px;
+}
+
+.skills {
+    text-align: right;
+    color: white;
+    margin: 10px;
+
+}
+
+.html {
+    width: 90%;
+    background-color: green;
+    height: 5px;
+}
+.title{
+    font-size: 40px;
+    color: white;
+}
+
+.css {
+    width: 80%;
+    background-color: green;
+    height: 5px;
+}
+
+.js {
+    width: 70%;
+    background-color: green;
+    height: 5px;
+}
+
+.java {
+    width: 60%;
+    background-color: green;
+    height: 5px;
+}
+
+
+
+/*-------contact------*/
+#contact {
+    margin-top: 90px;
+   
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
+.contact-left {
+    flex-basis: 35%;
+    margin-left: 120px;
+}
+
+.contact-right {
+    flex-basis: 35%;
+    margin-right: 100px;
+    padding: 10px;
+    
+}
+
+.contact-left p {
+    margin-top: 5px;
+    
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+input{
+    width:400px;
+    height: 40px;
+    border-radius: 3px;
+   
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:blue;
+    display: inline-block;
+    transition: transform 0.5s;
+    
+}
+
+.social-icon a:hover {
+    color:red;
+    transform: translateY(-5px);
+
+}
+
+.btn3 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    color:black;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: cenetr;
+    padding: 20px 0;
+    background: green;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*--------------css for small Screen-----------*/
+   #fas{
+    display: none;
+    }
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(img/flower3.jpg);
+     }
+
+    .header-text {
+        margin-top: 20%;
+        font-size: 16px;
+       }
+
+    .header-text h1 {
+        font-size: 30px;
+     }
+     #fas{
+        
+        display:block;
+        font-size:19px;
+      }
+      nav ul{
+        background:#ff004f;
+        position: fixed;
+        top: 0;
+        right: -100px;
+        width:110px;
+        height: 100vh;
+        padding-top:50px;
+        transition: right 0.5s;
+        }
+       nav ul li{
+        display: block;
+        margin: 25px;
+       }
+       nav ul li  a{
+         color:#080808;
+         font-size: 17px;
+         
+       }
+       nav ul .fa{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+
+       }
+       .subtitle{
+        font-size: 40px;
+
+       }
+       .about-col-1, .about-col-2{
+        flex-basis: 100%;
+       }
+       .about-col-1{
+        margin-bottom: 30px;
+       }
+       .column-left, .column-right{
+        flex-basis: 100%;
+       }
+       .column-left{
+        margin-left: 25px;
+       }
+       .column-left p{
+        font-size: 14px;
+
+       }
+       .logos{
+       width: 50px;
+       }
+       .column-right{
+        margin-top: 60px;
+    
+       }
+       .column-right .contain{
+          width: 180px;
+       } 
+       .contact-left,.contact-right{
+        flex-basis: 100%;
+       }
+       .contact-left {
+        margin-left: 50px;
+      }
+      .contact-left p{
+        font-size: 17px;
+      }
+      .contact-right input{
+         width:340px;
+         height: 30px;
+      }
+      .copyright p{
+        font-size: 12px;
+      }
+      
+
+    
+      
+}
+#msg{
+    color:#4CAF50;
+
+    display: block;
+ }
+ 
